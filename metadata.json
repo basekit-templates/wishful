@@ -1,8 +1,7 @@
 {
 	"name":"Wishful",
-	"directory":"wishful",
-	"thumbnail":"/wishful/wishful.jpg",
-	"screenshot":"/wishful/wishful.jpg",
+	"thumbnail":"wishful.jpg",
+	"screenshot":"wishful.jpg",
 	"pageTypes":[],
 	"defaultColorSwatch":"Earth 3",
 	"defaultFontSwatch":"Lato"
