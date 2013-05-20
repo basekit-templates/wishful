@@ -721,8 +721,8 @@ hr.line.align-right {
 .widget.extendednavigation ul li.folder .text 
 {
     display:inline-block;
-    padding: 18px 0px;
-    color: @color-swatch4;
+    padding: 18px 20px;
+    color: lighten(@color-swatch4,20%);
 }
 
 .widget.extendednavigation ul li.folder ul li .text 
@@ -732,10 +732,6 @@ hr.line.align-right {
 
 .widget.extendednavigation ul li span.menu-icon {
     margin-right: 5px;
-}
-
-.widget.extendednavigation ul li.folder {
-    background-image: none;
 }
 
 .widget.extendednavigation ul.align-right li.folder a {
@@ -787,7 +783,9 @@ hr.line.align-right {
     background-image: none;
 }
 
-
+.widget.extendednavigation ul.align-right li.folder {
+    background-position: left center;
+}
 
 
 /* DESKTOP REDIRECT */
