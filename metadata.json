@@ -2,7 +2,7 @@
 	"name":"Wishful",
 	"thumbnail":"wishful.jpg",
 	"screenshot":"wishful.jpg",
-	"pageTypes":[],
+	"pageTypes":["about"],
 	"defaultColorSwatch":"Earth 3",
 	"defaultFontSwatch":"Lato"
 }
