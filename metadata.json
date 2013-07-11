@@ -1,7 +1,7 @@
 {
 	"name":"Wishful",
-	"thumbnail":"wishful.jpg",
-	"screenshot":"wishful.jpg",
+	"thumbnail":"wishful.png",
+	"screenshot":"wishful.png",
 	"pageTypes":["about"],
 	"defaultColorSwatch":"Earth 3",
 	"defaultFontSwatch":"Lato"
