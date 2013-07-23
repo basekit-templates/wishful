@@ -2,7 +2,133 @@
 	"name":"Wishful",
 	"thumbnail":"wishful.png",
 	"screenshot":"wishful.png",
-	"pageTypes":["about"],
-	"defaultColorSwatch":"Earth 3",
-	"defaultFontSwatch":"Lato"
+	"pageTypes":["home"],
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#FFFFFF",
+            "color2":"#eff2f6",
+            "color3":"#aecdaf",
+            "color4":"#444546",
+            "color5":"#9e9597",
+            "color6":"#869286",
+            "color7":"#FFFFFF"
+        },
+        "Swatch 2": {
+            "color1":"#f8f5ec",
+            "color2":"#2d2727",
+            "color3":"#8fcb85",
+            "color4":"#5c5757",
+            "color5":"#aa9c8d",
+            "color6":"#545454",
+            "color7":"#f8f5eb"
+        },
+        "Swatch 3": {
+            "color1":"#f8f5ec",
+            "color2":"#2d2727",
+            "color3":"#8fcb85",
+            "color4":"#5c5757",
+            "color5":"#aa9c8d",
+            "color6":"#545454",
+            "color7":"#f8f5eb"
+        },
+        "Swatch 4": {
+            "color1":"#f8f5ec",
+            "color2":"#2d2727",
+            "color3":"#8fcb85",
+            "color4":"#5c5757",
+            "color5":"#aa9c8d",
+            "color6":"#545454",
+            "color7":"#f8f5eb"
+        },
+        "Swatch 5": {
+            "color1":"#f8f5ec",
+            "color2":"#2d2727",
+            "color3":"#8fcb85",
+            "color4":"#5c5757",
+            "color5":"#aa9c8d",
+            "color6":"#545454",
+            "color7":"#f8f5eb"
+        }
+    },
+    "fontSwatch": {
+       "title": "Lato",
+        "font1": {
+            "font-family": "Lato",
+            "font-size": "24px",
+            "font-weight": "500",
+            "line-height": "28px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "Lato",
+            "font-size": "22px",
+            "font-weight": "inherit",
+            "line-height": "36px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "Lato",
+            "font-size": "18px",
+            "font-weight": "inherit",
+            "line-height": "28px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "Lato",
+            "font-size": "16px",
+            "font-weight": "inherit",
+            "line-height": "26px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "Lato",
+            "font-size": "14px",
+            "font-weight": "500",
+            "line-height": "36px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "Lato",
+            "font-size": "15px",
+            "font-weight": "600",
+            "line-height": "28px",
+            "color": "@color-swatch6",
+            "color-hover": "@color-swatch6",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "@color-swatch3"
+        },
+        "font7": {
+            "font-family": "Lato",
+            "font-size": "16px",
+            "font-weight": "inherit",
+            "line-height": "26px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch2",
+            "background-color-hover": "@color-swatch7"
+        },
+        "font8": {
+            "font-family": "Lato",
+            "font-size": "40px",
+            "font-weight": "500",
+            "line-height": "50px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "Lato",
+            "font-size": "24px",
+            "font-weight": "500",
+            "line-height": "36px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        }
+    }
 }
