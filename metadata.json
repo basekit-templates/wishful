@@ -3,6 +3,8 @@
 	"thumbnail":"wishful.png",
 	"screenshot":"wishful.png",
 	"pageTypes":["home"],
+    "defaultColorSwatch":"Earth 3",
+    "defaultFontSwatch":"Lato",
     "colorSwatches":
     {
         "Swatch 1": {
