@@ -2,18 +2,15 @@
 	"name":"Wishful",
 	"thumbnail":"wishful.png",
 	"screenshot":"wishful.png",
-	"pageTypes":["home"],
-    "defaultColorSwatch":"Earth 3",
-    "defaultFontSwatch":"Lato",
     "colorSwatches":
     {
         "Swatch 1": {
-            "color1":"#FFFFFF",
+            "color1":"#ffffff",
             "color2":"#eff2f6",
             "color3":"#aecdaf",
             "color4":"#444546",
             "color5":"#9e9597",
-            "color6":"#869286",
+            "color6":"#8c8c8c",
             "color7":"#FFFFFF"
         },
         "Swatch 2": {
@@ -57,23 +54,23 @@
        "title": "Lato",
         "font1": {
             "font-family": "Lato",
-            "font-size": "24px",
+            "font-size": "32px",
             "font-weight": "500",
-            "line-height": "28px",
+            "line-height": "34px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font2": {
             "font-family": "Lato",
-            "font-size": "22px",
+            "font-size": "28px",
             "font-weight": "inherit",
-            "line-height": "36px",
+            "line-height": "32px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font3": {
             "font-family": "Lato",
-            "font-size": "18px",
+            "font-size": "22px",
             "font-weight": "inherit",
             "line-height": "28px",
             "color": "@color-swatch4",
@@ -82,55 +79,63 @@
         "font4": {
             "font-family": "Lato",
             "font-size": "16px",
-            "font-weight": "inherit",
-            "line-height": "26px",
+            "font-weight": "300",
+            "line-height": "28px",
             "color": "@color-swatch4",
-            "letter-spacing": "inherit"
+            "letter-spacing": "2px"
         },
         "font5": {
             "font-family": "Lato",
             "font-size": "14px",
             "font-weight": "500",
-            "line-height": "36px",
-            "color": "@color-swatch4",
+            "line-height": "28px",
+            "color": "@color-swatch5",
             "letter-spacing": "inherit"
         },
         "font6": {
             "font-family": "Lato",
-            "font-size": "15px",
-            "font-weight": "600",
+            "font-size": "12px",
+            "font-weight": "400",
             "line-height": "28px",
             "color": "@color-swatch6",
-            "color-hover": "@color-swatch6",
-            "letter-spacing": "inherit",
-            "background-color": "@color-swatch3",
-            "background-color-hover": "@color-swatch3"
+            "color-hover": "lighten(@color-swatch6,10%)",
+            "letter-spacing": "1px",
+            "background-color": "@color-swatch2",
+            "background-color-hover": "@color-swatch2"
         },
         "font7": {
             "font-family": "Lato",
-            "font-size": "16px",
+            "font-size": "12px",
             "font-weight": "inherit",
             "line-height": "26px",
             "color": "@color-swatch1",
-            "letter-spacing": "inherit",
-            "background-color": "@color-swatch2",
-            "background-color-hover": "@color-swatch7"
+            "letter-spacing": "2px",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "darken(@color-swatch3,8%)"
         },
         "font8": {
             "font-family": "Lato",
-            "font-size": "40px",
+            "font-size": "36px",
             "font-weight": "500",
-            "line-height": "50px",
+            "line-height": "42px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit"
         },
         "font9": {
             "font-family": "Lato",
-            "font-size": "24px",
+            "font-size": "17px",
             "font-weight": "500",
-            "line-height": "36px",
+            "line-height": "30px",
             "color": "@color-swatch1",
-            "letter-spacing": "inherit"
+            "letter-spacing": "1px"
+        },
+        "font10": {
+            "font-family": "Lato",
+            "font-size": "22px",
+            "font-weight": "300",
+            "line-height": "30px",
+            "color": "@color-swatch4",
+            "letter-spacing": "6px"
         }
     }
 }
