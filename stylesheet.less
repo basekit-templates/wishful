@@ -123,6 +123,12 @@ blockquote p {
     padding: 2em 0
 }
 
+/* DEFAULT PAGE TYPE */
+
+.bk-pt-default header {
+    border-bottom: 1px solid@color-swatch2;
+}
+
 /* ===============================
    HEADER
    =============================== */
@@ -330,12 +336,12 @@ footer .footer2 .columns-two-right {
 .widget.extendednavigation li:hover > ul {
     display: block;
     position: absolute;
+    width: 56%;
     background-color: @color-swatch7;
     border: 1px solid @color-swatch2;
     z-index: 500;
     padding: 20px 0;
     margin: 0;
-    width: 56%;
 }
 
 .widget.extendednavigation li:hover > ul > li {
@@ -1427,6 +1433,11 @@ footer .footer2 .widget.profile form {
         width: 100%;
     }
 
+    .widget.extendednavigation ul li:hover > ul {
+        width: 36%;
+    }
+
+
     /* FEATURE */
 
     .widget.feature .feature-bgimg {
@@ -1544,11 +1555,12 @@ footer .footer2 .widget.profile form {
     }
 
     .widget.extendednavigation li:hover > ul {
-        width: 99.5%;
+        width: 99.5%!important;
         margin-left: 0;
         margin-top: 0;
         padding: 0;
     }
+
 
     .widget.extendednavigation li:hover > ul li {
         display: block!important;
