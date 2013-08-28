@@ -545,6 +545,42 @@ footer .footer2 .columns-two-right {
 }
 
 /* ===============================
+   IMAGE WIDGET
+   =============================== */
+
+.widget.image img {
+    display: block;
+    max-width: 100%;
+    border: 0;
+    border-width: 0;
+}
+
+.widget.image {
+
+}
+
+.widget.image span.image-title {
+    display: block;
+    margin: 5px;
+    font-family: @font-swatch4-font-family;
+    font-weight: @font-swatch4-font-weight;
+    font-size: @font-swatch4-font-size;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: @font-swatch4-line-height;
+}
+
+.widget.image span.image-description {
+    display: block;
+    margin: 5px;
+    text-align: center;
+    font-family: @font-swatch5-font-family;
+    font-weight: @font-swatch5-font-weight;
+    font-size: @font-swatch5-font-size;
+    line-height: @font-swatch5-line-height;
+}
+
+/* ===============================
    BUTTON CSS
    =============================== */
 
@@ -984,8 +1020,8 @@ hr.line.align-right {
     padding: 6px 0
 }
 
-.widget.tweet a {
-    background-image: image('/images/socialicons-twitter.svg');
+.svg .widget.tweet a {
+    background-image: image('/images/social/socialicons-twitter.svg');
     background-size: 21px;
     background-position: 10px center;
     background-repeat: no-repeat;
@@ -1007,6 +1043,10 @@ hr.line.align-right {
     text-transform: uppercase;
     text-decoration: none;
     text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+}
+
+.widget.tweet a {
+    background-image: image('/images/social/socialicons-twitter.png');
 }
 
 .widget.tweet a:hover {
@@ -1084,34 +1124,68 @@ footer .footer2 .widget.profile .bk-profile-socialicons {
     background-color: @font-swatch7-background-color-hover
 }
 
+/* SVG ICONS */
+
+.svg .widget.socialicons span.bk-socialicons-twitter a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-twitter a {
+    background-image: image('/images/social/socialicons-twitter.svg');
+}
+
+.svg .widget.socialicons span.bk-socialicons-linkedin a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-linkedin a {
+    background-image: image('/images/social/socialicons-linkedin.svg')
+}
+
+.svg .widget.socialicons span.bk-socialicons-facebook a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-facebook a {
+    background-image: image('/images/social/socialicons-facebook.svg')
+}
+
+.svg .widget.socialicons span.bk-socialicons-rss a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-rss a {
+    background-image: image('/images/social/socialicons-rss.svg')
+}
+
+.svg .widget.socialicons span.bk-socialicons-googleplus a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-googleplus a {
+    background-image: image('/images/social/socialicons-googleplus.svg')
+}
+
+.svg .widget.socialicons span.bk-socialicons-youtube a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-youtube a {
+    background-image: image('/images/social/socialicons-youtube.svg')
+}
+
+/* PNG ICONS */
+
 .widget.socialicons span.bk-socialicons-twitter a,
 .widget.profile .bk-profile-socialicons span.bk-socialicons-twitter a {
-    background-image: image('/images/socialicons-twitter.svg')
+    background-image: image('/images/social/socialicons-twitter.png');
 }
 
 .widget.socialicons span.bk-socialicons-linkedin a,
 .widget.profile .bk-profile-socialicons span.bk-socialicons-linkedin a {
-    background-image: image('/images/socialicons-linkedin.svg')
+    background-image: image('/images/social/socialicons-linkedin.png')
 }
 
 .widget.socialicons span.bk-socialicons-facebook a,
 .widget.profile .bk-profile-socialicons span.bk-socialicons-facebook a {
-    background-image: image('/images/socialicons-facebook.svg')
+    background-image: image('/images/social/socialicons-facebook.png')
 }
 
 .widget.socialicons span.bk-socialicons-rss a,
 .widget.profile .bk-profile-socialicons span.bk-socialicons-rss a {
-    background-image: image('/images/socialicons-rss.svg')
+    background-image: image('/images/social/socialicons-rss.png')
 }
 
 .widget.socialicons span.bk-socialicons-googleplus a,
 .widget.profile .bk-profile-socialicons span.bk-socialicons-googleplus a {
-    background-image: image('/images/socialicons-googleplus.svg')
+    background-image: image('/images/social/socialicons-googleplus.png')
 }
 
 .widget.socialicons span.bk-socialicons-youtube a,
 .widget.profile .bk-profile-socialicons span.bk-socialicons-youtube a {
-    background-image: image('/images/socialicons-youtube.svg')
+    background-image: image('/images/social/socialicons-youtube.png')
 }
 
 /* ===============================
