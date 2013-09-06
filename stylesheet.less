@@ -324,13 +324,13 @@ footer .footer2 .columns-two-right {
 .widget.extendednavigation ul li.folder {
     margin-right: 16px;
     background-image: image('/images/arrow-down.png');
-    background-position: right 13px;
+    background-position: right center;
     background-repeat: no-repeat;
     cursor: pointer;
 }
 
 .widget.extendednavigation ul li.folder .text:hover {
-    color: @color-swatch3
+    color: @font-swatch6-color-hover;
 }
 
 /* DROPDOWN MENU */
@@ -1484,7 +1484,7 @@ footer .footer2 .widget.profile form {
 
 @media only screen and (max-width: 768px) { 
     header {
-        padding: 38px 0 0;
+        padding: 22px 0 8px;
         border-bottom: 0;
     }
 
@@ -1496,21 +1496,112 @@ footer .footer2 .widget.profile form {
 
     /* NAV */
 
-    .widget.extendednavigation {
-        width: 100%;
-        padding: 16px 0;
-        margin-top: 32px;
-        border-top: 1px solid @color-swatch2;
-    }
 
     .widget.extendednavigation {
         display: block;
         width: 100%;
     }
 
-    .widget.extendednavigation ul li:hover > ul {
-        width: 36%;
-    }
+     /* NAV ICON */
+
+  .widget .extendednavigation a.pull {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 14px;
+  }
+
+    .widget .extendednavigation a.pull:after {
+    content:"";
+    background: image('/images/nav-icon.png') no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: -50px;
+  }
+
+  /* NAV */
+
+  
+ .widget .extendednavigation ul {
+    width: 100%;
+    display: none;
+    margin: 0;
+    border-top: 1px solid @color-swatch2;
+  }
+
+  .widget.extendednavigation ul li {
+  border-bottom: 1px solid @color-swatch2;
+  padding: 16px 0;
+  }
+
+  .widget.extendednavigation ul li:hover .text {
+    color: @font-swatch6-color-hover;
+  }
+
+  .widget.extendednavigation ul li:hover {
+    border-bottom: 1px solid @color-swatch2;
+  }
+
+  .widget.extendednavigation ul li:hover .text {
+    color: @font-swatch6-color-hover;
+  }
+
+  .widget.extendednavigation ul li.folder {
+    padding: 16px 0;
+  }
+
+  .widget .extendednavigation li {
+    width: 100%;
+    padding: 0;
+  }
+
+  .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
+      padding: 5px 0;
+      margin: 0;
+  }
+
+  .widget.extendednavigation ul li > ul {
+      display: none!important;
+  }
+
+  .widget.extendednavigation ul li:hover > ul {
+      display: block!important;
+      width: 100%;
+      margin: 16px 0;
+      padding: 0;
+  }
+
+  .widget.extendednavigation ul li:hover > ul > li {
+    border-bottom: none;
+  }
+
+  .widget.extendednavigation ul li:hover > ul > li .text {
+    color: @font-swatch6-color;
+  }
+
+  .widget.extendednavigation ul li:hover > ul > li:hover .text {
+    color: @font-swatch6-color-hover;
+  }
+
+  .widget.extendednavigation ul li.folder {
+    border-radius: 0;
+  }
+
+  .widget.extendednavigation ul li:hover > ul li:first-child {
+    padding-top: 16px;
+    border-top: none;
+  }
+
+    .widget.extendednavigation ul li:hover > ul li:last-child {
+    padding-top: 16px;
+  }
+
+  .widget.extendednavigation li:hover > ul > li > a {
+    padding-left: 10px;
+  }
 
 
     /* FEATURE */
@@ -1568,109 +1659,6 @@ footer .footer2 .widget.profile form {
 
     footer .footer2 .columns-two-right {
         text-align: left;
-    }
-
-    /* NAV */
-
-    .widget.extendednavigation {
-        width: 100%;
-        padding: 0;
-    }
-
-    .widget .extendednavigation {
-        display: block;
-        width: 100%;
-    }
-
-    .widget .extendednavigation ul {
-        display: block;
-        width: 100%;
-        float: left;
-        margin: 0;
-    }
-
-    .widget .extendednavigation ul li {
-        display: block!important;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        border-bottom: 1px solid @color-swatch2;
-    }
-
-    .widget .extendednavigation ul li a {
-        padding: 1.4em 1em
-    }
-
-    .widget.extendednavigation ul li.selected {
-        margin-right: 0
-    }
-
-    .widget .extendednavigation ul li.selected a {
-        background-color: transparent;
-        padding: 1.4em 1em;
-    }
-
-    .widget .extendednavigation li:hover {
-        background-color: @color-swatch2
-    }
-
-    .widget.extendednavigation ul li.folder {
-        background-image: image('/images/arrow-down-ipad.png');
-        padding: 0;
-        background-position: right center;
-    }
-
-    .widget.extendednavigation ul li.folder .text {
-        padding: 1.4em 1em;
-        margin-left: 0;
-    }
-
-    .widget .extendednavigation ul li:last-child {
-        border: 0
-    }
-
-    .widget.extendednavigation li:hover > ul {
-        width: 99.5%!important;
-        margin-left: 0;
-        margin-top: 0;
-        padding: 0;
-    }
-
-
-    .widget.extendednavigation li:hover > ul li {
-        display: block!important;
-        margin-bottom: 0;
-        padding: 0;
-    }
-
-    .widget.extendednavigation li:hover > ul li > a {
-        padding: 0!important
-    }
-
-    .widget.extendednavigation li:hover > ul li .text:hover {
-        padding: 1.4em 1em
-    }
-
-    /* UL ALIGN RIGHT */
-
-    .widget.extendednavigation ul.align-right li:hover ul li {
-        text-align: right
-    }
-
-    .widget.extendednavigation ul.align-right li.folder {
-        background-position: 12px center
-    }
-
-    /* UL ALIGN LEFT */
-
-    .widget.extendednavigation ul.align-left li:hover ul li {
-        text-align: left
-    }
-
-    /* UL ALIGN CENTER */
-
-    .widget.extendednavigation ul.align-center li:hover ul li {
-        text-align: center
     }
 
     /* FEATURE */
