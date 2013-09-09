@@ -2,6 +2,11 @@
 	"name":"Wishful",
 	"thumbnail":"wishful.png",
 	"screenshot":"wishful.png",
+    "tags": {
+        "en": ["minimal", "clean", "Business", "Vintage"],
+        "es": ["minimalista", "limpio", "Corporativo"],
+        "br": ["minimalista", "limpo", "Corporativo"]
+    },
     "colorSwatches":
     {
         "Swatch 1": {
