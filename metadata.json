@@ -3,9 +3,9 @@
 	"thumbnail":"wishful.png",
 	"screenshot":"wishful.png",
     "tags": {
-        "en": ["minimal", "clean", "Business", "Vintage"],
-        "es": ["minimalista", "limpio", "Corporativo"],
-        "br": ["minimalista", "limpo", "Corporativo"]
+        "en": ["minimal", "clean", "Business", "Vintage", "stylish", "agency", "magazine", "creative", "elegant", "professional", "sophisticated", "media", "sans-serif"],
+        "es": ["minimalista", "limpio", "Corporativo", "estilo", "agencia", "revista", "creativo", "elegante", "profesional", "sofisticado", "comunicacion", "sans-serif"],
+        "br": ["minimalista", "limpo", "Corporativo", "estilo", "agência", "revista", "criativo", "elegante", "profissional", "sofisticado", "mídia", "sans-serif"]
     },
     "colorSwatches":
     {
