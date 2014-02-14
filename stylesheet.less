@@ -11,114 +11,6 @@ body {
     margin: 0 5%;
 }
 
-a {
-    font-family: @font-swatch2-font-family;
-    font-size: @font-swatch5-font-size;
-    font-weight: @font-swatch5-font-weight;
-    color: @color-swatch2;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-    margin: 0;
-    padding: 0 0 10px;
-}
-
-h1 {
-    font-family: @font-swatch1-font-family;
-    font-weight: @font-swatch1-font-weight;
-    color: @font-swatch1-color;
-    line-height: @font-swatch1-line-height;
-    letter-spacing: @font-swatch1-letter-spacing;
-    font-size: @font-swatch1-font-size;
-}
-
-h2 {
-    font-family: @font-swatch2-font-family;
-    font-size: @font-swatch2-font-size;
-    font-weight: @font-swatch2-font-weight;
-    line-height: @font-swatch2-line-height;
-    color: @font-swatch2-color;
-    letter-spacing: @font-swatch2-letter-spacing;
-}
-
-h3 {
-    font-family: @font-swatch3-font-family;
-    font-size: @font-swatch3-font-size;
-    font-weight: @font-swatch3-font-weight;
-    color: @font-swatch3-color;
-    line-height: @font-swatch3-line-height;
-    letter-spacing: @font-swatch3-letter-spacing;
-}
-
-h4 {
-    font-family: @font-swatch4-font-family;
-    font-size: @font-swatch4-font-size;
-    font-weight: @font-swatch4-font-weight;
-    line-height: @font-swatch4-line-height;
-    color: @font-swatch4-color;
-    letter-spacing: @font-swatch4-letter-spacing;
-}
-
-p {
-    font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
-    font-weight: @font-swatch5-font-weight;
-    line-height: @font-swatch5-line-height;
-    color: @font-swatch5-color;
-    letter-spacing: @font-swatch5-letter-spacing;
-}
-
-ul,
-ol,
-li {
-    font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
-    font-weight: @font-swatch5-font-weight;
-    line-height: @font-swatch5-line-height;
-    color: @font-swatch5-color;
-    letter-spacing: @font-swatch5-letter-spacing;
-}
-
-blockquote {
-    margin: 30px 0;
-    quotes: "\201C""\201D""\2018""\2019";
-    font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
-    font-weight: @font-swatch5-font-weight;
-    line-height: @font-swatch5-line-height;
-    color: darken(@font-swatch5-color,10%);
-}
-
-blockquote:before {
-    font-family: georgia;
-    color: @color-swatch2;
-    content: open-quote;
-    font-size: 4em;
-    line-height: .1em;
-    margin-right: .1em;
-    vertical-align: -.4em;
-}
-
-blockquote p {
-    display: inline;
-    font-style: italic;
-    font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
-    font-weight: @font-swatch5-font-weight;
-    line-height: @font-swatch5-line-height;
-    color: @font-swatch5-color;
-}
-
 /* ===============================
    CUSTOM CSS
    =============================== */
@@ -322,9 +214,6 @@ footer .footer2 .columns-two-right {
 /* FOLDER */
 
 .widget.extendednavigation ul li.folder {
-    margin-right: 16px;
-    background-image: image('/images/arrow-down.png');
-    background-position: right center;
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -588,21 +477,7 @@ footer .footer2 .columns-two-right {
 
 
 .widget.paypalbuynow .widget.button.paypal {
-    border: 1px solid darken(@color-swatch3,5%);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2);
-    text-decoration: none;
-    text-shadow: 0 1px 0px rgba(0,0,0,0.2);
-}
-
-/* ===============================
-   DROPBOX BUTTON
-   =============================== */
-
-.widget.dropbox button {
-    border: 1px solid darken(@color-swatch3,5%);
+      border: 1px solid darken(@color-swatch3,5%);
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -828,6 +703,70 @@ hr.line.align-right {
 
 .lb-data .lb-number {
   font-size:bkscale(@font-swatch5-font-size,0.9);
+}
+
+/* ===============================
+  BLOG
+   =============================== */
+
+.widget {
+    &.bloglistposts {
+        .blog-post-item {
+            border-bottom: 1px dotted @color-swatch5;
+        }
+
+    }
+}
+
+.blog-post-item {
+    margin: 1.5em 0;
+    padding-bottom: 1em;
+    h2 {
+        a {
+            font-family: @font-swatch2-font-family;
+            font-size: @font-swatch2-font-size;
+            font-weight: @font-swatch2-font-weight;
+            line-height: @font-swatch2-line-height;
+            color: @font-swatch2-color;
+            letter-spacing: @font-swatch2-letter-spacing;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.blog-post-metadata {
+    background-color: transparent;
+    background-image: none;
+    margin-top: 0;
+    text-align: left;
+}
+
+.blog-list-footer {
+    background-color: transparent;
+    background-image: none;
+}
+
+.blog-post-more-link {
+    float: left;
+    width: 100%;
+}
+
+/* BLOG SEARCH */
+.blogsearch {
+    form {
+        button {
+            padding: 10px;
+            color: @font-swatch7-color;
+            font-size: @font-swatch6-font-size;
+            font-weight: @font-swatch6-font-weight;
+            line-height: @font-swatch6-line-height;
+            background-color: @font-swatch7-background-color;
+            border: none;
+        }
+    }
 }
 
 
