@@ -211,7 +211,7 @@ footer .footer2 .columns-two-right {
 }
 
 .widget.extendednavigation a.pull {
-    display: none
+    top:-40px;
 }
 
 .widget.extendednavigation ul {
@@ -1402,6 +1402,7 @@ footer .footer2 .widget.profile form {
    =============================== */
 .widget.responsiveslideshow .slideshow-image-list {
     height: 300px;
+    min-height:initial;
 }
 
 .widget.responsiveslideshow .slideshow-widget {
@@ -1430,6 +1431,7 @@ footer .footer2 .widget.profile form {
 
 .widget.responsiveslideshow .slideshow-image-list {
     height:450px;
+    min-height:initial;
   }
 
 .widget.responsiveslideshow .title {
@@ -1524,29 +1526,6 @@ footer .footer2 .widget.profile form {
         display: block;
         width: 100%;
     }
-
-     /* NAV ICON */
-
-  .widget .extendednavigation a.pull {
-    display: block;
-    width: 100%;
-    position: absolute;
-    top: 14px;
-  }
-
-    .widget .extendednavigation a.pull:after {
-    content:"";
-    background: image('/images/nav-icon.png') no-repeat;
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    top: -50px;
-  }
-
-  /* NAV */
-
   
  .widget .extendednavigation ul {
     width: 100%;
@@ -1657,6 +1636,7 @@ footer .footer2 .widget.profile form {
     .widget.responsiveslideshow .slideshow-image-list, 
     .widget.responsiveslideshow .slideshow-widget {
         height:350px;
+        min-height:initial;
     }
 
 }
