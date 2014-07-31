@@ -20,43 +20,43 @@
             "color4":"#444546",
             "color5":"#9e9597",
             "color6":"#8c8c8c",
-            "color7":"#FFFFFF"
+            "color7":"#ffffff"
         },
         "Swatch 2": {
-            "color1":"#f8f5ec",
-            "color2":"#2d2727",
-            "color3":"#8fcb85",
-            "color4":"#5c5757",
-            "color5":"#aa9c8d",
-            "color6":"#545454",
-            "color7":"#f8f5eb"
+            "color1":"#ffffff",
+            "color2":"#f6f6ef",
+            "color3":"#b77d9d",
+            "color4":"#464644",
+            "color5":"#959c9e",
+            "color6":"#8c8c8c",
+            "color7":"#ffffff"
         },
         "Swatch 3": {
             "color1":"#ffffff",
-            "color2":"#eff2f6",
-            "color3":"#838bd8",
-            "color4":"#444546",
-            "color5":"#9e9597",
+            "color2":"#f6eff3",
+            "color3":"#7d82b7",
+            "color4":"#464445",
+            "color5":"#989e95",
             "color6":"#8c8c8c",
-            "color7":"#FFFFFF"
+            "color7":"#ffffff"
         },
         "Swatch 4": {
-            "color1":"#f3f3f3",
-            "color2":"#2d2727",
-            "color3":"#d883a8",
-            "color4":"#5c5757",
-            "color5":"#aa9c8d",
-            "color6":"#545454",
-            "color7":"#f3f3f3"
+            "color1":"#ffffff",
+            "color2":"#e0d8e1",
+            "color3":"#679cb2",
+            "color4":"#433944",
+            "color5":"#999b7d",
+            "color6":"#7f7f7f",
+            "color7":"#ffffff"
         },
         "Swatch 5": {
             "color1":"#ffffff",
-            "color2":"#eff2f6",
-            "color3":"#e5c37f",
-            "color4":"#444546",
-            "color5":"#9e9597",
-            "color6":"#8c8c8c",
-            "color7":"#FFFFFF"
+            "color2":"#c7dcc9",
+            "color3":"#be844d",
+            "color4":"#2b4c2e",
+            "color5":"#7562a8",
+            "color6":"#797979",
+            "color7":"#ffffff"
         }
     },
     "fontSwatch": {
