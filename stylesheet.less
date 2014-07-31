@@ -90,7 +90,7 @@ header {
     display: block;
     float: left;
     padding: 0;
-    width: 25%;
+	width: 25%;
 }
 
 /* COMPANY NAME */
@@ -372,63 +372,6 @@ footer .footer2 .columns-two-right {
     letter-spacing: @font-swatch9-letter-spacing;
 }
 
-/* FEATURE BUTTON */
-
-.widget.feature button {
-    font-family: @font-swatch7-font-family;
-    font-size: .8em;
-    font-weight: @font-swatch7-font-weight;
-    line-height: @font-swatch7-line-height;
-    color: @font-swatch7-color;
-    letter-spacing: @font-swatch7-letter-spacing;
-    background-color: @font-swatch7-background-color;
-    padding: 8px 16px;
-    border: 1px solid darken(@color-swatch3,5%);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2);
-    text-decoration: none;
-    text-shadow: 0 1px 0px rgba(0,0,0,0.2);
-}
-
-.widget.feature button:hover {
-    background-color: @font-swatch7-background-color-hover;
-    cursor: pointer;
-}
-
-.widget.feature button.btn.justifyleft {
-    text-align: left
-}
-
-.widget.feature button.btn.justifycenter {
-    text-align: center
-}
-
-.widget.feature button.btn.justifyright {
-    text-align: right
-}
-
-.widget.feature button.btn.justifyfull {
-    text-align: justify
-}
-
-.widget.feature button.btn.italic {
-    font-style: italic
-}
-
-.widget.feature button.btn.bold {
-    font-weight: bold
-}
-
-.widget.feature button span {
-    vertical-align: center
-}
-
-.widget.feature button i {
-    margin-right: 5px
-}
-
 /* ===============================
    FEATURE LAYOUTS
    =============================== */
@@ -521,21 +464,6 @@ footer .footer2 .columns-two-right {
 }
 
 /* ===============================
-   PAYPAL BUTTON
-   =============================== */
-
-
-.widget.paypalbuynow .widget.button.paypal {
-      border: 1px solid darken(@color-swatch3,5%);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2);
-    text-decoration: none;
-    text-shadow: 0 1px 0px rgba(0,0,0,0.2);
-}
-
-/* ===============================
    BUTTON CSS
    =============================== */
 
@@ -543,7 +471,22 @@ footer .footer2 .columns-two-right {
     padding: 2px 0;
 }
 
-.widget.button button {
+.widget.ecombasket .ecombasket-list-container .ecombasket-checkout-wrap .ecombasket-checkout-link,
+.widget.button button,
+.widget.contactform fieldset button.btn,
+.widget.profile form button,
+.widget.paypalbuynow .widget.button.paypal,
+.widget.tweet a,
+.widget.dropbox button,
+.widget.signupform button,
+button.btn,
+.blogsearch form button,
+.widget.ecombasket .ecombasket-pull,
+.widget.ecomcheckout .checkout-order-button,
+.widget.ecomproduct .ecom-product .btn,
+.widget.ecomcheckout table tr td .checkout-quantitybtn button,
+.widget.feature .feature-btn button,
+.widget.feature .feature-bgimg .content button {
     font-family: @font-swatch7-font-family;
     font-size: @font-swatch7-font-size;
     font-weight: @font-swatch7-font-weight;
@@ -557,14 +500,31 @@ footer .footer2 .columns-two-right {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 2px 2px fadeout(@color-swatch1, 50%);
     text-decoration: none;
     text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+	outline: none;
+	&:hover {
+	    background-color: @font-swatch7-background-color-hover;
+	    cursor: pointer;
+	}
 }
 
-.widget.button button:hover {
-    background-color: @font-swatch7-background-color-hover;
-    cursor: pointer;
+.widget.paypalbuynow .widget.button.paypal,
+.widget.dropbox button,
+.widget.tweet a {
+	padding-left: 40px;
+}
+
+.widget.ecombasket .ecombasket-list-container .ecombasket-checkout-wrap .ecombasket-checkout-link,
+.widget.tweet a,
+.ecom-product-go-to-checkout-btn {
+    display: inline-block;
+}
+
+.widget.ecomcheckout table tr td .checkout-quantitybtn button {
+	height: auto;
+	width: auto;
 }
 
 /* JUSTIFY */
@@ -629,132 +589,6 @@ hr.line.align-right {
 }
 
 /* ===============================
-   GALLERY WIDGET
-   =============================== */
-
-.widget.gallery {
-    width: 101.2%;
-    margin-left: -0.5%;
-}
-
-.widget.gallery ul {
-    display: block;
-    margin: 0;
-    padding: 0px;
-    list-style: none;
-}
-
-.widget.gallery li {
-    float: left;
-    position: relative;
-    width: 33.3%;
-    padding-bottom: 33%;
-}
-
-.widget.gallery li  span.inner {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-color: @color-swatch1;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.widget.gallery ul li.one-to-one span.inner {
-    background-size: 100% 100%
-}
-
-.widget.gallery ul li.portrait span.inner {
-    background-size: 100% auto
-}
-
-.widget.gallery ul li.landscape span.inner {
-    background-size: auto 100%
-}
-
-.widget.gallery li span.inner {
-    position: absolute;
-    left: 5px;
-    right: 5px;
-    top: 0px;
-    bottom: 16px;
-    overflow: hidden;
-}
-
-.widget.gallery li span.inner img {
-    display: none
-}
-
-.widget.gallery ul:before,
-.widget.gallery ul:after {
-    content: " ";
-    display: table;
-}
-
-.widget.gallery ul:after {
-    clear: both
-}
-
-.widget.gallery ul {
-    *zoom: 1
-}
-
-.widget.gallery li span.inner .title,
-.widget.gallery li span.inner .description {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: -310px;
-    max-height: 284px;    
-    background: @color-swatch1;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    text-align: center;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-    font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
-    font-weight: @font-swatch5-font-weight;
-    line-height: @font-swatch5-line-height;
-    color: @color-swatch1;
-    letter-spacing: @font-swatch5-letter-spacing;
-}
-
-.widget.gallery li span.inner:hover .title {
-    margin-bottom: 0
-}
-
-.widget.gallery li span.inner .description {
-    display: none
-}
-
-.widget.gallery li span.inner a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-/* Lightbox */
-
-.lb-data .lb-caption, .lb-data .lb-number {
-  font-family:@font-swatch5-font-family;
-  font-size:@font-swatch5-font-size;
-  font-weight: @font-swatch5-font-weight;
-  line-height:@font-swatch5-line-height;
-  color:lighten(@font-swatch5-color,50%);
-}
-
-.lb-data .lb-number {
-  font-size:bkscale(@font-swatch5-font-size,0.9);
-}
-
-/* ===============================
   BLOG
    =============================== */
 
@@ -765,6 +599,12 @@ hr.line.align-right {
         }
 
     }
+}
+
+.blog-post-feature-image-wrap,
+.menu .menu-item-image-wrap {
+	line-height: 0;
+	margin-bottom: 15px;
 }
 
 .blog-post-item {
@@ -791,6 +631,7 @@ hr.line.align-right {
     background-image: none;
     margin-top: 0;
     text-align: left;
+    color: lighten(@color-swatch5, 10%);
 }
 
 .blog-list-footer {
@@ -802,22 +643,6 @@ hr.line.align-right {
     float: left;
     width: 100%;
 }
-
-/* BLOG SEARCH */
-.blogsearch {
-    form {
-        button {
-            padding: 10px;
-            color: @font-swatch7-color;
-            font-size: @font-swatch6-font-size;
-            font-weight: @font-swatch6-font-weight;
-            line-height: @font-swatch6-line-height;
-            background-color: @font-swatch7-background-color;
-            border: none;
-        }
-    }
-}
-
 
 /* =======================================
    CLICK TO CALL
@@ -878,17 +703,79 @@ hr.line.align-right {
     padding-bottom: 0px
 }
 
-.widget.twitter .twitter-profile-pic {
-    float: left;
-    margin-right: 20px;
-}
-
 .widget.twitter .twitter-content span.bk-full-name {
     font-family: @font-swatch4-font-family;
     color: @color-swatch3;
     font-weight: bold;
 }
 
+.widget.twitter .twitter-profile-pic {
+    float: left;
+    margin-right: 0;
+    padding-right: 10px;
+    width: 12%;
+}
+
+.twitter-content {
+    float: left;
+	width: 88%;
+}
+
+/* ===============================
+   GLOBAL INPUTS
+   =============================== */
+
+.widget.profile form input,
+.widget.contactform fieldset input,
+.widget.contactform fieldset textarea,
+.widget.profile form fieldset input,
+.signupform fieldset input,
+input[type="password"],
+input[type="search"],
+input[type="email"],
+input[type="text"],
+select {
+	text-indent: 0;
+	outline: none;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	vertical-align: middle;
+	height: 40px;
+	background-color: lighten(@color-swatch2,50%);
+	border: 1px solid darken(@color-swatch2, 10%);
+	font-family: @font-swatch5-font-family;
+	font-size: @font-swatch5-font-size;
+	font-weight: 300;
+	line-height: @font-swatch5-line-height;
+	color: @font-swatch5-color;
+	letter-spacing: @font-swatch5-letter-spacing;
+	border-radius: 3px;
+	&:focus {
+		border: 1px solid darken(@color-swatch2, 20%);
+	}
+}
+
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+.signupform fieldset input,
+.widget.profile form input,
+.blog-search-input {
+	margin-right: 10px;
+}
+
+.widget.contactform fieldset textarea {
+	min-height: 140px;
+	height: auto;
+	resize: vertical;
+}
+
+.form-group,
+.ecom-product-variation,
+.ecom-product-add-to-cart-btn-wrapper {
+	padding-bottom: 10px;
+}
 
 /* ===============================
    CONTACT FORM
@@ -906,6 +793,7 @@ hr.line.align-right {
 .widget.contactform fieldset {
     border: none;
     padding: 0;
+    margin: 0;
 }
 
 .widget.contactform fieldset label {
@@ -917,63 +805,6 @@ hr.line.align-right {
     line-height: @font-swatch5-line-height;
     color: @font-swatch5-color;
     letter-spacing: 1px;
-}
-
-.widget.contactform fieldset input {
-    height: 40px;
-    width: 100%;
-    border: 1px solid lighten(@color-swatch4,60%);
-    font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
-    color: @font-swatch5-color;
-    background-color: lighten(@color-swatch2,50%);
-    background-image: image('/images/form-bg.png');
-    background-repeat: repeat;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    text-indent: 8px;
-    margin-top: 6px;
-    margin-bottom: 30px;
-    padding:0;
-}
-
-.widget.contactform fieldset textarea {
-    height: 100px;
-    width: 100%;
-    border: 1px solid lighten(@color-swatch4,60%);
-    font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
-    color: @font-swatch5-color;
-    background-color: lighten(@color-swatch2,50%);
-    background-image: image('/images/form-bg.png');
-    background-repeat: repeat;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    text-indent: 8px;
-    padding-top: 14px;
-    margin-top: 6px;
-    margin-bottom: 20px;
-    resize: none;
-}
-
-.widget.contactform fieldset button.btn {
-    padding: 4px 8px;
-    font-family: @font-swatch7-font-family;
-    font-size: .75em;
-    font-weight: @font-swatch7-font-weight;
-    line-height: @font-swatch7-line-height;
-    color: @font-swatch7-color;
-    letter-spacing: @font-swatch7-letter-spacing;
-    background-color: @font-swatch7-background-color;
-    border: 1px solid darken(@color-swatch3,5%);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2);
-    text-decoration: none;
-    text-shadow: 0 1px 0px rgba(0,0,0,0.2);
 }
 
 .widget.contactform fieldset button.btn:hover {
@@ -1045,26 +876,6 @@ hr.line.align-right {
 
 .svg .widget.tweet a {
     background-image: image('/images/social/socialicons-twitter.svg');
-    background-size: 21px;
-    background-position: 10px center;
-    background-repeat: no-repeat;
-    background-color: @font-swatch7-background-color;
-
-    font-family: @font-swatch7-font-family;
-    font-size: .75em;
-    font-weight: @font-swatch7-font-weight;
-    line-height: @font-swatch7-line-height;
-    color: @font-swatch7-color;
-    letter-spacing: @font-swatch7-letter-spacing;
-    background-color: @font-swatch7-background-color;
-    padding: 11px 12px 11px 38px;
-    border: 1px solid darken(@color-swatch3,5%);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2);
-    text-decoration: none;
-    text-shadow: 0 1px 0px rgba(0,0,0,0.2);
 }
 
 .widget.tweet a {
@@ -1120,7 +931,6 @@ hr.line.align-right {
 
 .widget.profile .bk-profile-socialicons span a {
     background-color: @font-swatch7-background-color;
-    box-shadow: 0 0 0 3px rgba(110,110,110,0.3);
     margin-right: 10px;
 }
 
@@ -1215,21 +1025,6 @@ footer .footer2 .widget.profile .bk-profile-socialicons {
    PROFILE WIDGET
    =============================== */
 
-.widget.profile span,
-.widget.profile a {
-    display: block;
-    font-size: @font-swatch5-font-size;
-    font-family: @font-swatch5-font-family;
-    color: @font-swatch5-color;
-    line-height: @font-swatch5-line-height;
-    font-weight: @font-swatch5-font-weight;
-}
-
-.widget.profile a:hover {
-    color: @color-swatch3;
-    text-decoration: none;
-}
-
 /* FOOTER PROFILE - TWITTER */
 
 .widget.profile ul.twitter {
@@ -1276,57 +1071,6 @@ footer .footer2 .widget.profile form {
   letter-spacing: @font-swatch5-letter-spacing;
 }
 
-.widget.profile form input {
-  height: 42px;
-  background-color: darken(@color-swatch4,3%);
-  border: 1px solid darken(@color-swatch4,7%);
-  font-family: @font-swatch5-font-family;
-  font-size: @font-swatch5-font-size;
-  font-weight: 300;
-  line-height: @font-swatch5-line-height;
-  color: lighten(@font-swatch5-color,25%);
-  letter-spacing: @font-swatch5-letter-spacing;
-  text-indent: 16px;
-  -webkit-border-radius: 3px;
-   -moz-border-radius: 3px;
-        border-radius: 3px;
-}
-
-.widget.profile form input:focus {
-    outline: none;
-}
-
-.widget.profile form button {
-    font-family: @font-swatch7-font-family;
-    font-size: .8em;
-    font-weight: @font-swatch7-font-weight;
-    line-height: @font-swatch7-line-height;
-    color: @font-swatch7-color;
-    letter-spacing: @font-swatch7-letter-spacing;
-    background-color: @font-swatch7-background-color;
-    padding: 7px 16px;
-    border: 1px solid darken(@color-swatch3,8%);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2), 0 0 0 3px rgba(61,61,61,0.2);
-    text-decoration: none;
-    text-shadow: 0 1px 0px rgba(0,0,0,0.2);
-}
-
-.widget.profile form button:hover {
-    background-color: @font-swatch7-background-color-hover;
-    cursor: pointer;
-}
-
-/* ===============================
-   MAP WIDGET
-   =============================== */
-
-.widget.map {
-
-}
-
 /* ===============================
    SIGNUP FORM WIDGET
    =============================== */
@@ -1351,41 +1095,6 @@ footer .footer2 .widget.profile form {
     line-height:@font-swatch5-line-height;
     color:@font-swatch5-color;
     letter-spacing:@font-swatch5-letter-spacing;
-}
-
-.widget.signupform fieldset input {
-    height: 42px;
-    background-color: @color-swatch2;
-    border: 1px solid darken(@color-swatch2,4%);
-    font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
-    color: @font-swatch5-color;
-    text-indent: 12px;
-    -webkit-border-radius: 3px;
-     -moz-border-radius: 3px;
-          border-radius: 3px;
-}
-
-.widget.signupform fieldset input:focus {
-  outline: none;
-}
-
-.widget.signupform button {
-    font-family: @font-swatch7-font-family;
-    font-size: .8em;
-    font-weight: @font-swatch7-font-weight;
-    line-height: @font-swatch7-line-height;
-    color: @font-swatch7-color;
-    letter-spacing: @font-swatch7-letter-spacing;
-    background-color: @font-swatch7-background-color;
-    padding: 8px 16px;
-    border: 1px solid darken(@color-swatch3,5%);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2);
-    text-decoration: none;
-    text-shadow: 0 1px 0px rgba(0,0,0,0.2);
 }
 
 .widget.signupform button:hover {
@@ -1495,38 +1204,91 @@ footer .footer2 .widget.profile form {
 }
 
 .widget.responsiveslideshow .slideshow-widget .btn-play {
-    background: rgba(0,0,0,0.5);
-    font-size: 0;
-    text-indent: -99999px;
-    position: absolute;
-    cursor: pointer;
-    z-index: 12;
     width: 42px;
     height: 42px;
-    top: -5%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+    top: 50%;
+    left: 50%;
+    margin-left: -21px;
+    margin-top: -21px;
     @media @mobile {
-        width: 30px;
-        height: 30px;
+        height: 35px;
     }
 }
 
 .widget.responsiveslideshow .slideshow-widget .btn-play:after {
-    top:-7px;
+    top: -9px;
     @media @mobile {
         top: -12px;
     }
 }
 
 /* ===============================
+   ECOMMERCE
+   =============================== */
+
+
+// Ecommerce Filter Forms
+.form-group.productlist-search {
+	position: relative;
+	float: left;
+	margin: 0 0 20px;
+	input[type=search] {
+		padding-right: 90px;
+		box-sizing: border-box;
+	}
+	button {
+		position: absolute;
+		right: 0;
+		bottom: 10px;
+	}
+}
+
+label {
+	display: inline-block;
+	padding-bottom: .4em;
+}
+
+select {
+	cursor: pointer;
+	position: relative;
+}
+
+.productlist-item-count {
+  clear: both;
+}
+
+.productlist-display-form {
+	label {
+		display: inline-block;
+		width: 24%;
+		padding-right: 20px;
+		text-align: left;
+	}
+	select, input[type=search] {
+		margin: 0;
+		width: 75%;
+	}
+}
+.productlist-display-form .form-group {
+	width: 100%;
+	padding: 0;
+	text-align: right;
+}
+.form-group.productlist-search button {
+	bottom: 0;
+	height: 40px;
+}
+
+
+/* ===============================
    IPAD WIDTH
    =============================== */
 
 @media only screen and (max-width: 768px) { 
-    header {
+	.companyheader {
+		width: 85%;
+	}
+    .temlpate-header {
         padding: 22px 0 8px;
         border-bottom: 0;
     }
@@ -1620,7 +1382,7 @@ footer .footer2 .widget.profile form {
   }
 
   .widget.extendednavigation li:hover > ul > li > a {
-    padding-left: 10px;
+    padding: 0 15px;
   }
 
 
@@ -1643,19 +1405,18 @@ footer .footer2 .widget.profile form {
         font-size: bkscale(@font-swatch9-font-size,0.8);
         line-height: bkscale(@font-swatch9-line-height,0.8);
     }
-
-    .widget.feature .feature-btn button {
-        padding: 4px 10px;
-        font-size: .7em;
-    }
-
 }
 
 /* ===============================
    IPHONE WIDTH
    =============================== */
 
-@media only screen and (max-width: 480px) { 
+@media only screen and (max-width: 480px) {
+	
+	.widget .extendednavigation ul li.folder:after {
+		right: -11px;
+		top: 47%;
+	}
 
     footer {
         padding: 2.5em 0 0;
@@ -1694,11 +1455,6 @@ footer .footer2 .widget.profile form {
         line-height: bkscale(@font-swatch9-line-height,0.7);
     }
 
-    .widget.feature .feature-btn button {
-        padding: 4px 10px;
-        font-size: .7em;
-    }
-
     /* CLICK TO CALL */
 
     .widget.clicktocall a {
@@ -1709,7 +1465,7 @@ footer .footer2 .widget.profile form {
         background-color: @font-swatch7-background-color;
 
         font-family: @font-swatch7-font-family;
-        font-size: .75em;
+        font-size: @font-swatch7-font-size;
         font-weight: @font-swatch7-font-weight;
         line-height: @font-swatch7-line-height;
         color: @font-swatch7-color;
@@ -1727,25 +1483,33 @@ footer .footer2 .widget.profile form {
 
     .widget.clicktocall a:hover {
         background-color: @font-swatch7-background-color-hover;
+        background-position: 14px center;
         cursor: pointer;
+        padding: 12px 12px 12px 34px;
     }
 
     .widget.clicktocall a:active {
         box-shadow: inset 0 2px 3px rgba(0,0,0,0.1)
     }
-    
-     /* GALLERY */
 
-    .widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
-        max-height: 150px;
-    }
-
-    .widget.gallery ul.gallery-widget li
-    {
-      width: 50%;
-      padding-bottom: 50%;
-    }
-
+    // Ecommerce
+    .productlist-display-form {
+    	.form-group {
+	    	text-align: left;
+    	}
+		select, label {
+			width: 100%;
+		}
+	}
+	
+    // Twitter Feed
+	.widget.twitter .twitter-profile-pic {
+	    width: 25%;
+	}
+	
+	.twitter-content {
+		width: 75%;
+	}
 }
 
 @media only screen and (min-width: 1140px) { 
