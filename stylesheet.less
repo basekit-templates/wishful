@@ -205,14 +205,21 @@ footer .footer2 .columns-two-right {
    =============================== */
 
 .widget.extendednavigation {
+    .clearfix;
     float: right;
     position: relative;
     width: 75%;
     margin: 4px 0;
+    @media @tablet {
+      float: none;
+    }
 }
 
 .widget.extendednavigation a.pull {
 	right: 7px;
+  @media @tablet {
+    top: 15px;
+  }
 }
 
 .widget.extendednavigation ul {
