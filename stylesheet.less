@@ -112,8 +112,15 @@ header {
 
 .widget.logo {
     display: block;
-    float: left;
+    // float: left;
     margin-right: 14px;
+}
+
+.widget {
+    &.logo, &.companyname {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
 
 
