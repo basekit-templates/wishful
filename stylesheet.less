@@ -114,8 +114,15 @@ header {
 
 .widget.logo {
     display: block;
-    float: left;
+    // float: left;
     margin-right: 14px;
+}
+
+.widget {
+    &.logo, &.companyname {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
 
 
@@ -200,15 +207,21 @@ footer .footer2 .columns-two-right {
    =============================== */
 
 .widget.extendednavigation {
+    .clearfix;
     float: right;
     position: relative;
     width: 75%;
     margin: 4px 0;
+    @media @tablet {
+      float: none;
+    }
 }
 
 .widget.extendednavigation a.pull {
-	top: 8px;
 	right: 7px;
+  @media @tablet {
+    top: 15px;
+  }
 }
 
 .widget.extendednavigation ul {
@@ -324,14 +337,13 @@ footer .footer2 .columns-two-right {
    FEATURE
    =============================== */
 
-.widget.feature .feature-bgimg {
-    height: 500px
+.widget.feature .feature-bgimg .content {
+    height: auto;
 }
 
 .widget.feature .content {
     display: block!important;
     padding: 2.5em 0;
-    height: 500px;
     text-align: left;
 }
 
@@ -906,6 +918,7 @@ textarea {
     text-decoration: none;
     text-indent: 9999px;
     white-space: nowrap;
+    overflow: hidden;
 }
 
 .widget.profile .bk-profile-socialicons span {
@@ -1278,6 +1291,270 @@ select {
 	height: 40px;
 }
 
+// Basket Summary
+
+
+.widget.ecombasketsummary {
+    // Title
+    .basket-summary-title {
+        border-bottom: 2px solid darken(@color-swatch2,10%);
+    }
+
+    // Empty basket
+    .basket-summary-empty-copy {
+        margin: 2em 0;
+    }
+
+    // Checkout Items
+    table.basket-summary-items-table {
+        margin-bottom: 30px;
+        border-spacing: 0;
+        width: 100%;
+
+
+        tr {
+            @media @mobile {
+                display: block;
+            }
+            td, th {
+                padding: 20px 0;
+                border-bottom: none;
+                @media @mobile {
+                    display: block;
+                    padding: 10px 0 0 0;
+                }
+            }
+            td {
+
+            }
+            th {
+
+            }
+        }
+
+        // Table Head
+        tbody tr:first-child {
+            @media @mobile {
+                display: none;
+            }
+            th {
+                border-bottom: 1px solid darken(@color-swatch2,10%);
+                &:nth-child(2) {
+                    border-right: 0px darken(@color-swatch1,10%);
+                }
+
+            }
+        }
+        // Item
+        tr.basket-summary-items {
+            @media @mobile {
+                position: relative;
+                border-top: 1px darken(@color-swatch1,10%);
+                padding: 0 0 10px 0;
+                margin: 0 0 10px 0;
+
+            }
+
+            td {
+                border-bottom: 1px darken(@color-swatch1,10%);
+                @media @mobile {
+                    border-bottom: none;
+                }
+            }
+            // Image
+            td:nth-child(1) {
+                @media @mobile {
+                    width: auto;
+                }
+                .image-wrap {
+                    width: 100%;
+                    height: 0;
+                    padding-bottom: 100%;
+                    float: none;
+                    background-size: cover;
+                    background-position: center;
+                    @media @mobile {
+                        padding-bottom: 0;
+                        height: auto;
+                        background-position: -1000px;
+                    }
+                    img {
+                        display: none;
+                        @media @mobile {
+                            display: block;
+                            width: 60%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+            // Product info
+            td:nth-child(2) {
+                padding-left: 1em;
+                padding-right: 170px;
+                vertical-align: top;
+                position: relative;
+                @media @tablet{
+                    padding-right: 0;
+                    float: left;
+                }
+                @media @mobile {
+                    width: auto;
+                    padding-left: 0;
+                    border-right: none;
+                    float: none;
+                }
+                // Name
+                .basket-summary-productname {
+                    font-size: @font-swatch4-font-size;
+                    display: block;
+                    @media @mobile {
+                        font-size: bkscale(@font-swatch4-font-size, 0.8);
+                    }
+                }
+                // Price
+                .basket-summary-pricepu {
+                    font-size: @font-swatch4-font-size;
+                    @media @mobile {
+                        font-size: bkscale(@font-swatch4-font-size, 0.8);
+                    }
+                }
+                // Quantity label
+                .basket-summary-quantity {
+                    width: 150px;
+                    position: absolute;
+                    right: 20px;
+                    display: block;
+                    top: 0px;
+                    height: 20px;
+                    line-height: 30px;
+                    text-align: center;
+                    font-size: bkscale(@font-swatch5-font-size, 0.8);
+                    @media @tablet {
+                        position: relative;
+                        right: 0;
+                        top: 0;
+                    }
+                    @media @mobile {
+                        width: 130px;
+                        height: 50px;
+                    }
+                }
+                // Quantity button
+                .basket-summary-quantitybtn {
+                    background-color: transparent;
+                    margin: 0;
+                    position: absolute;
+                    width: 150px;
+                    height: 40px;
+                    @media @tablet {
+                        position: relative;
+                        right: 0;
+                        top: 0;
+                        float: right;
+                    }
+                    @media @mobile {
+                        height: 30px;
+                        width: 130px;
+                        float: none;
+                    }
+                    button {
+                        font-family: @font-swatch5-font-family;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 40px;
+                        border: none;
+                        cursor: pointer;
+                        padding: 0;
+                        color: @color-swatch1;
+                        background-color: @color-swatch3;
+                        position: absolute;
+                        top: 0;
+                        width: 40px;
+                        height: 40px;
+
+
+                        @media @mobile {
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;
+                        }
+
+                        &:hover {
+                            background-color: darken(@color-swatch3, 10%);
+                        }
+
+                        &.js-remove {
+                            left: 0;
+                        }
+                        &.js-add {
+                            right: 0;
+                        }
+                    }
+                    // Count
+                    span {
+                        background-color: darken(@color-swatch1, 6%);
+                        color: invert(@color-swatch2);
+                        height: 40px;
+                        line-height: 40px;
+                        position: absolute;
+                        left: 40px;
+                        right: 40px;
+                        text-align: center;
+                        top: 0;
+                        display: block;
+                        width: 70px;
+                        @media @mobile {
+                            height: 30px;
+                            line-height: 30px;
+                            left: 30px;
+                            right: 30px;
+                        }
+                    }
+                }
+            }
+            td.basket-summary-amount {
+                text-align: right;
+                @media @mobile {
+                    text-align: left;
+                    position: absolute;
+                    right: 0;
+                    bottom: 10px;
+                }
+            }
+        }
+
+        // Sub Total
+        tbody tr:last-child {
+            td {
+                font-size: @font-swatch4-font-size;
+                border-top: 1px solid darken(@color-swatch1,10%);
+                border-bottom: 2px solid darken(@color-swatch1,10%);
+                @media @mobile {
+                    text-align: left;
+                    border-top: 0;
+                    border-bottom: 0;
+                    font-size: bkscale(@font-swatch4-font-size, 0.9);
+                }
+                &.basket-summary-subtotal {
+                    text-align: right;
+                    @media @mobile {
+                        border-top: 2px solid darken(@color-swatch1,10%);
+                        border-bottom: 2px solid darken(@color-swatch1,10%);
+                    }
+                }
+            }
+        }
+    }
+
+    // Ts & Cs
+    .basket-summary-legal-links {
+        margin-top: 2em;
+        list-style-type: none;
+    }
+}
+
+
 
 /* ===============================
    IPAD WIDTH
@@ -1299,6 +1576,11 @@ select {
     }
 
     /* NAV */
+
+    .widget .extendednavigation ul li.folder:after {
+    right: -11px;
+    top: 47%;
+    }
 
 
     .widget.extendednavigation {
@@ -1331,7 +1613,7 @@ select {
   }
 
   .widget.extendednavigation ul li.folder {
-    padding: 16px 0;
+    padding: 0px 0;
   }
 
   .widget .extendednavigation li {
@@ -1351,7 +1633,7 @@ select {
   .widget.extendednavigation ul li:hover > ul {
       display: block!important;
       width: 100%;
-      margin: 16px 0;
+      margin: 0px 0;
       padding: 0;
   }
 
@@ -1372,12 +1654,12 @@ select {
   }
 
   .widget.extendednavigation ul li:hover > ul li:first-child {
-    padding-top: 16px;
+    padding-top: 0px;
     border-top: none;
   }
 
     .widget.extendednavigation ul li:hover > ul li:last-child {
-    padding-top: 16px;
+    padding-top: 0px;
   }
 
   .widget.extendednavigation li:hover > ul > li > a {

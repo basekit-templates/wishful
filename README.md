@@ -3,6 +3,10 @@ wishful
 
 BaseKit's Wishful Template
 
+Changes - 2014-08-11
++ Template review fixes
++ Basket summary style markup change fixes
+
 Changes - 2013-05-22
 + Onto Develop Branch
 
