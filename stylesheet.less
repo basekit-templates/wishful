@@ -114,7 +114,6 @@ header {
 
 .widget.logo {
     display: block;
-    // float: left;
     margin-right: 14px;
 }
 
@@ -533,40 +532,6 @@ button.btn,
 .widget.ecomcheckout table tr td .checkout-quantitybtn button {
 	height: auto;
 	width: auto;
-}
-
-/* JUSTIFY */
-
-.widget.button button.btn.justifyleft {
-    text-align: left
-}
-
-.widget.button button.btn.justifycenter {
-    text-align: center
-}
-
-.widget.button button.btn.justifyright {
-    text-align: right
-}
-
-.widget.button button.btn.justifyfull {
-    text-align: justify
-}
-
-.widget.button button.btn.italic {
-    font-style: italic
-}
-
-.widget.button button.btn.bold {
-    font-weight: bold
-}
-
-.widget.button span {
-    vertical-align: center
-}
-
-.widget.button i {
-    margin-right: 5px
 }
 
 /* ===============================
@@ -1686,6 +1651,12 @@ select {
         font-size: bkscale(@font-swatch9-font-size,0.8);
         line-height: bkscale(@font-swatch9-line-height,0.8);
     }
+	.widget.profile form fieldset input,
+	.signupform fieldset input,
+	.blog-search-input {
+		width: 100%;
+		margin-bottom: 5px;
+	}
 }
 
 /* ===============================
