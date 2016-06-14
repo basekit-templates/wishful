@@ -1,6 +1,7 @@
 {
 	"name":"Wishful",
 	"thumbnail":"wishful.png",
+        "screenshot":"wishful-screenshot.jpg",
 	"templateType":"standard",
 	"pageTypes": ["home"],
     "tags": {
