@@ -1,5 +1,6 @@
 {
 	"name":"Wishful",
+	"versionTenCompatible": 1,
 	"thumbnail":"wishful.png",
         "screenshot":"wishful-screenshot.jpg",
 	"templateType":"standard",
